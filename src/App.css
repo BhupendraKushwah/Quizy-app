@@ -1,38 +1,130 @@
-.App {
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+.user-score{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-score span{
+  margin-left: 10px;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -50px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.Name-Modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  animation: fadeInDown 0.5s;
+  width: 800px;
+  margin-top: 70px;
+  border: none;
+}
+.Name-Modal h2 {
+  margin-bottom: 20px;
+}
+.Name-Modal input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.Name-Modal button,.SubmitBtn,.CloseBtn{
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+.Name-Modal button:hover{
+  background-color: #45a048;
+}
+
+.Question-Container{
+  margin:auto;
+  max-width: 800px;
+  margin-top: 50px;
+  padding:20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  
+}
+label{
+  display: block;
+}
+.SubmitBtn{
+  padding:15px;
+  margin-left: 5px;
+}
+.CloseBtn{
+  background-color:#e64f4f;
+  padding:15px;
+  margin-right: 5px;
+}
+
+/* Admin.css */
+
+.admin-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.admin-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.admin-section {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.admin-section h3 {
+  color: #333;
+}
+
+.total-users,
+.total-playing-users {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sorted-players ul {
+  list-style: none;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.player-card {
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* Add more styles as needed */
