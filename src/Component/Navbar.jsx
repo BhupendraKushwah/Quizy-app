@@ -10,7 +10,7 @@ const Navbar = ({score}) => {
         <h1>Quizy</h1>
         {console.log(currentPath)}
       </div>
-      {currentPath!=='/admin/'&&<div className="user-score">
+      {currentPath==='/quiz'&&<div className="user-score">
     
         <h3>Score:</h3><span>{score}</span>
       </div>}

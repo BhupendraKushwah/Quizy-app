@@ -55,8 +55,10 @@ const QuestionBox = ({
       <h1 style={{ padding: "0 20px" }}>hello {name}</h1>
       {question && (
         <div className="Question-Container">
+          <div className="question-head">
           <span>Question: </span>
           <span>{question.Question}</span>
+          </div>
           <ul>
             {question.Option.map((option, index) => (
               <label key={index}>
